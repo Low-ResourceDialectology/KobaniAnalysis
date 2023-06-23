@@ -61,14 +61,13 @@
 
 [![Project Name Screen Shot][project-screenshot]](https://example.com)
 
-This will be an interactive map for various dialects from low-resource languages, with a focus on and starting with Kurdish.
-
-There exist a plathora of Kurdish dialects that are often unintelligible to the native speakers of each other. However, Kurdish is considered to be a dialect continuum with at times sudden language shifts and sometimes smooth transitions from one dialect to the neighboring one.
-At first it might seem confusing and counter intuitive that it has been found, that Central Kurdish is considered to be very understandable by speakers of Northern Kurdish and Southern Kurdish to be understandable by speakers of Central Kurdish- but speakers of Northern Kurdish hardly being able to understand Southern Kurdish. An explanation for this can be found in the prior mentioned dialect continuum- where "Central Kurdish" is not necessarily "Central Kurdish", since there exist many differen subdialects of Central Kurdish.
+This is a computer-aided analysis of the Kurdish dialect Kobani, based on speech data collected from dozens of native speakers from various villages of that region.
 
 [![Project Motivation Screen Shot][project-idea]](https://example.com)
 
-Utilizing an interactive map, visualizing the different aspects and geographical distribution of the separate dialects might enable new insights and at the very least an easier understanding of Kurdish linguistics.
+The Kobani dialect has been neglected by research in the past and is in dire need of being properly analyzed.
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
