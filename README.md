@@ -59,11 +59,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Project Name Screen Shot][project-screenshot]](https://example.com)
+[![Project Name Screen Shot][project-screenshot]](https://github.com/Low-ResourceDialectology/KobaniAnalysis)
 
 This is a computer-aided analysis of the Kurdish dialect Kobani, based on speech data collected from dozens of native speakers from various villages of that region.
 
-[![Project Motivation Screen Shot][project-idea]](https://example.com)
+[![Project Motivation Screen Shot][project-idea]](https://github.com/Low-ResourceDialectology/KobaniAnalysis)
 
 The Kobani dialect has been neglected by research in the past and is in dire need of being properly analyzed.
 
@@ -101,7 +101,7 @@ List of major frameworks/libraries used to bootstrap this project.
         - [x] Interviewing Process
     - [ ] Automated Visualizations
         - [ ] GeoData
-        - [ ] Demographic Information
+        - [x] Demographic Information
 - [ ] Section 2: Computer-aided Analysis
     - [ ] Preprocessing of Speech Data
         - [ ] Transcription
@@ -159,9 +159,9 @@ Distributed under the Apache License. See `LICENSE.txt` for more information.
 
 Raman Ahmad - 
 
-Christian Schuler - [@christians89898](https://twitter.com/christians89898) - christianschuler8989(4T)gmail.com
+[Christian Schuler](https://christianschuler8989.github.io/) - christianschuler8989(4T)gmail.com
 
-
+Related project of the authors: [Towards a complete Mapping of Kurdish Dialectology](https://github.com/Low-ResourceDialectology/DialectMapping)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,6 +193,5 @@ A list of helpful resources we would like to give credit to:
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/christian-schuler-59090a177/
 [project-screenshot]: images/KobaniAnalysis-Concept.png
-[project-idea]: images/KobaniAnalysis-LangKobani.png
-
+[project-idea]: images/KobaniAnalysis-LangFamily.png
 
