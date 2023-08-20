@@ -94,27 +94,27 @@ List of major frameworks/libraries used to bootstrap this project.
 ## Roadmap
 
 - [x] Set up this Repository
-- [ ] Section 1: Data Collection
+- [ ] Phase 1: Data Collection
     - [x] Reasoning
         - [x] Target Informants
         - [x] Fieldworker Instruction
         - [x] Interviewing Process
     - [ ] Automated Visualizations
-        - [ ] GeoData
+        - [ ] GeoData (partially)
         - [x] Demographic Information
-- [ ] Section 2: Computer-aided Analysis
+- [ ] Phase 2: Computer-aided Analysis
     - [ ] Preprocessing of Speech Data
-        - [ ] Transcription
+        - [ ] Transcription (partially)
         - [ ] Translation
         - [ ] Quality Control
     - [ ] Natural Language Processing
         - [ ] KLPT
-        - [ ] Whisper
+        - [ ] Whisper (partially)
         - [ ] eSpeak
-- [ ] Section 3: Phonology & Morphology
+- [ ] Phase 3: Phonology & Morphology
     - [ ] Linguistic Analysis
-        - [ ] Kobani Phonology
-        - [ ] Kobani Morphology
+        - [ ] Kobani Phonology (partially)
+        - [ ] Kobani Morphology (partially)
     - [ ] Condense Results and Conclusions
         - [ ] Visualizations
         - [ ] Link to Publications
