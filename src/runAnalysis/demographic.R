@@ -16,7 +16,7 @@ library(DescTools)
 ###########
 png(paste0(dir_out, "demographic-age-all-title.png", sep=""), pointsize=10, width=1600, height=960, res=200)
 plot_age <- hist(kobani_dialect_metainfo$Age, breaks = 20, col=rgb(0,1,0,0.2), xlim=c(30, 90),
-                   xlab='Year', ylab='Occurences', main='Age distribution of participants')
+                 xlab='Year', ylab='Occurences', main='Age distribution of participants')
 dev.off()
 
 # Version without title for LaTeX-Document
@@ -35,7 +35,7 @@ kobani_dialect_metainfo_female_kur <- kobani_dialect_metainfo[kobani_dialect_met
 #################
 png(paste0(dir_out, "demographic-age-gender-title-eng.png", sep=""), pointsize=10, width=1600, height=960, res=200)
 plot_age_all <- hist(kobani_dialect_metainfo_male_eng$Age, breaks = 20, col=rgb(0,0,1,0.2), xlim=c(30, 90), ylim=c(0,4),
-                       xlab='Year', ylab='Number of occurences', main='Age distribution of male and female participants')
+                     xlab='Year', ylab='Number of occurences', main='Age distribution of male and female participants')
 plot_age_all <- hist(kobani_dialect_metainfo_female_eng$Age, breaks = 20, col=rgb(1,0,0,0.2), add=TRUE)
 legend('topright', c('Male', 'Female'), fill=c(rgb(0,0,1,0.2), rgb(1,0,0,0.2)))
 dev.off()

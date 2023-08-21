@@ -23,7 +23,7 @@
 #' @export
 removeDuplicates <- function(data, varialbe) {
   data_unique <-data[!duplicated(data$variable),]
-    
+  
   return(data_unique)
 }
 

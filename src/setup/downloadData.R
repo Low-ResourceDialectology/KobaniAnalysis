@@ -1,14 +1,3 @@
-
-#' geodata library from \url{https://github.com/rspatial/geodata}
-#' manual \url{https://cran.r-project.org/web/packages/geodata/geodata.pdf}
-#' 
-#' Functions of interest for this project:
-#' gadm() for downloading country data
-#' osm() for downloading OpenStreetMap data
-library(geodata) # For downloadGadm
-
-library(terra) # For downloadOsmData
-
 #' Gadm GeoData
 #'
 #' Download the GeoData from gadm (\url{https://gadm.org/index.html}) for the 
@@ -48,8 +37,6 @@ downloadGadm <- function(country, level, path, version, resolution) {
   
   return(gadm_data)
 }
-
-
 
 
 #' Osm Data

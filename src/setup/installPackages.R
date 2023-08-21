@@ -5,25 +5,51 @@
 ################################################################################
 
 # Prerequisites ################################################################
+## Check installed packages
+required_packages <- c("gapminder",
+                       "gstat",
+                       "maps",
+                       "mapview",
+                       "rnaturalearth",
+                       "sf",
+                       "spatstat",
+                       "stars",
+                       "stringr",
+                       "tidyverse",
+                       "units",
+                       "spdep",
+                       "plm",
+                       "splm",
+                       "geodata",
+                       "DescTools",
+                       "terra")                                        
+# Extract not installed packages
+not_installed <- required_packages[!(required_packages %in% installed.packages()[ , "Package"])]    
+if(length(not_installed)) install.packages(not_installed)
+# Print information to console
+# "4 packages had to be installed."
+print(paste(length(not_installed), "packages had to be installed.")) 
+
+
 #print("Installing packages:")
 # GeoData and Spatial Data Analysis with R https://edzer.github.io/hertie-school/
-install.packages("gapminder")
-install.packages("gstat")
-install.packages("maps")
-install.packages("mapview")
-install.packages("rnaturalearth")
-install.packages("sf")
-install.packages("spatstat")
-install.packages("stars")
-install.packages("stringr")
-install.packages("tidyverse")
-install.packages("units")
-install.packages("spdep")
-install.packages("plm")
-install.packages("splm")
-install.packages("geodata")
-install.packages("DescTools")
-install.packages("terra")
+#install.packages("gapminder")
+#install.packages("gstat")
+#install.packages("maps")
+#install.packages("mapview")
+#install.packages("rnaturalearth")
+#install.packages("sf")
+#install.packages("spatstat")
+#install.packages("stars")
+#install.packages("stringr")
+#install.packages("tidyverse")
+#install.packages("units")
+#install.packages("spdep")
+#install.packages("plm")
+#install.packages("splm")
+#install.packages("geodata")
+#install.packages("DescTools")
+#install.packages("terra")
 
 
 #install.packages(c("gapminder", "gstat", "maps", "mapview",

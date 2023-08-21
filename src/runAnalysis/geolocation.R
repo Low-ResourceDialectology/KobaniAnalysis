@@ -8,10 +8,8 @@
 
 #library(tidyterra) # for: geom_spatvector
 
-
 # Closes all open devices
 graphics.off()  
-
 
 #' Plot GeoData
 #'

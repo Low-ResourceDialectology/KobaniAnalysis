@@ -1,7 +1,7 @@
 data/
 output/
 output_backup/
-
+src/tempscripts/
 
 # Gitignore from https://github.com/github/gitignore/blob/main/R.gitignore
 

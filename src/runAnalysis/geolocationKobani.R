@@ -82,9 +82,9 @@ lines(current_region, lwd=5)
 lines(current_region, col="white", lwd=1)
 text(gadm_kobani_2, "NAME_2", cex=1.0, halo=TRUE)
 plot(st_geometry(st_centroid(kobani_cities_points_audio_ara)), pch = 23, cex = 2, alpha = 0.5, col = "red", bg = "blue", lwd = 2, add = TRUE)
-  # When using: st_geometry(st_centroid(kobani_cities_points_audio_ara)
-  # Error in h(simpleError(msg, call)) : 
-  #   error in evaluating the argument 'x' in selecting a method for function 'plot': no applicable method for 'st_centroid' applied to an object of class "data.frame"
+# When using: st_geometry(st_centroid(kobani_cities_points_audio_ara)
+# Error in h(simpleError(msg, call)) : 
+#   error in evaluating the argument 'x' in selecting a method for function 'plot': no applicable method for 'st_centroid' applied to an object of class "data.frame"
 #text(kobani_cities_points_audio_ara_vector, "PlaceOfLiving_Ara_R", adj = c(0.5, 1.5), offset = 1, cex=.8, halo=TRUE) # Works, but overlapping labels
 addTextLabels(kobani_cities_x, kobani_cities_y, kobani_cities_points_audio_ara$PlaceOfLiving_Ara_R, cex.label=1, col.background=rgb(0,0,0, 0.75), col.label="white")
 dev.off()
