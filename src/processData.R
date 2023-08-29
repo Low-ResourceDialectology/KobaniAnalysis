@@ -10,7 +10,7 @@ source(paste0(dir_src, "processData/studyData.R", sep=""))
 # Ramans Study
 ##############
 ## Load Ramans data of study participants from file: KobaniAnalysisMetaInformation.csv
-kobani_dialect_metainfo = read.csv(paste0(dir_raw_manual, "/KobaniAnalysisMetaInformation.csv", sep=""), sep=",")
+kobani_dialect_metainfo = read.csv(paste0(dir_raw_manual, "/kobaniAnalysisMetaInformation.csv", sep=""), sep=",")
 
 # TODO: Anonymize data of study participants
 

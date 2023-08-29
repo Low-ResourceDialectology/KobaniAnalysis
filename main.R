@@ -36,6 +36,12 @@ source(paste0(dir_src, "setup.R", sep=""))
 ## The script that handles the data processing
 source(paste0(dir_src, "processData.R", sep=""))
 
+# TODO: Refactor code into a more modular approach, where everything happens in its own script/function
+#       The creation of the subset around the Kobani-region on its own (and optionally)
+#       The plotting of all locations in Kobani (with and without name-labels)
+#       The plotting of all locations corresponding to the Study
+#       And so on...
+
 # Run Analysis
 ##############
 ## The script to run parts of the analysis
