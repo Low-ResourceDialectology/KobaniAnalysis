@@ -157,7 +157,7 @@ Distributed under the Apache License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Raman Ahmad - 
+[Raman Ahmad](https://github.com/RamanAhmad.github.io/) - raman.ahmad2022(4T)gmail.com
 
 [Christian Schuler](https://christianschuler8989.github.io/) - christianschuler8989(4T)gmail.com
 
