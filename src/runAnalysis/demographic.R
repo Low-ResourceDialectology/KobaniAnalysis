@@ -16,13 +16,13 @@ library(DescTools)
 ###########
 png(paste0(dir_out, "kobaniAnalysis-demographic-age-all-title.png", sep=""), pointsize=10, width=1600, height=960, res=200)
 plot_age <- hist(kobani_dialect_metainfo$Age, breaks = 20, col=rgb(0,1,0,0.2), xlim=c(30, 90),
-                 xlab='Year', ylab='Occurences', main='Age distribution of participants')
+                 xlab='Year', ylab='Participants', main='Age distribution of participants')
 dev.off()
 
 # Version without title for LaTeX-Document
 png(paste0(dir_out, "kobaniAnalysis-demographic-age-all-notitle.png", sep=""), pointsize=10, width=1600, height=960, res=200)
 plot_age <- hist(kobani_dialect_metainfo$Age, breaks = 20, col=rgb(0,1,0,0.2), xlim=c(30, 90),
-                 xlab='Year', ylab='Occurences', main='')
+                 xlab='Year', ylab='Participants', main='')
 dev.off()
 
 kobani_dialect_metainfo_male_eng <- kobani_dialect_metainfo[kobani_dialect_metainfo$Gender_Eng == "male",]
@@ -31,14 +31,34 @@ kobani_dialect_metainfo_female_eng <- kobani_dialect_metainfo[kobani_dialect_met
 kobani_dialect_metainfo_male_kur <- kobani_dialect_metainfo[kobani_dialect_metainfo$Gender_Kur == "Nêr/Mêr",]
 kobani_dialect_metainfo_female_kur <- kobani_dialect_metainfo[kobani_dialect_metainfo$Gender_Kur == "Mê/Jin",]
 
+kobani_plot <- kobani_dialect_metainfo %>% select("Age", "Gender_Eng")
+
 # Age - by Gender
 #################
+# Trying new plotting-style → Does not work properly...
+# Online they fill with white, but here it does not work that way...
+# http://www.sthda.com/english/wiki/ggplot2-histogram-plot-quick-start-guide-r-software-and-data-visualization
+# png(paste0(dir_out, "kobaniAnalysis-demographic-age-gender-title-eng.png", sep=""), pointsize=10, width=1600, height=960, res=200)
+# plot_age_all <- ggplot(kobani_plot, aes(x=Age, fill=Gender_Eng)) +
+#   geom_histogram(fill="white", alpha=0.5, position="dodge") +
+#   scale_fill_manual(values=c("#619CFF","#F8766D")) 
+# print(plot_age_all)
+# dev.off()
+
+# Trying new colors
 png(paste0(dir_out, "kobaniAnalysis-demographic-age-gender-title-eng.png", sep=""), pointsize=10, width=1600, height=960, res=200)
-plot_age_all <- hist(kobani_dialect_metainfo_male_eng$Age, breaks = 20, col=rgb(0,0,1,0.2), xlim=c(30, 90), ylim=c(0,4),
-                     xlab='Year', ylab='Number of occurences', main='Age distribution of male and female participants')
-plot_age_all <- hist(kobani_dialect_metainfo_female_eng$Age, breaks = 20, col=rgb(1,0,0,0.2), add=TRUE)
-legend('topright', c('Male', 'Female'), fill=c(rgb(0,0,1,0.2), rgb(1,0,0,0.2)))
+plot_age_all <- hist(kobani_dialect_metainfo_male_eng$Age, breaks = 40, col="#619CFF", xlim=c(30, 90), ylim=c(0,3),
+                     xlab='Year', ylab='Number of participants', main='Age distribution of male and female participants')
+plot_age_all <- hist(kobani_dialect_metainfo_female_eng$Age, breaks = 40, col="#F8766D", add=TRUE)
+legend('topright', c('Male', 'Female'), fill=c("#619CFF", "#F8766D"))
 dev.off()
+
+# png(paste0(dir_out, "kobaniAnalysis-demographic-age-gender-title-eng.png", sep=""), pointsize=10, width=1600, height=960, res=200)
+# plot_age_all <- hist(kobani_dialect_metainfo_male_eng$Age, breaks = 20, col=rgb(0,0,1,0.2), xlim=c(30, 90), ylim=c(0,4),
+#                      xlab='Year', ylab='Number of occurences', main='Age distribution of male and female participants')
+# plot_age_all <- hist(kobani_dialect_metainfo_female_eng$Age, breaks = 20, col=rgb(1,0,0,0.2), add=TRUE)
+# legend('topright', c('Male', 'Female'), fill=c(rgb(0,0,1,0.2), rgb(1,0,0,0.2)))
+# dev.off()
 
 png(paste0(dir_out, "kobaniAnalysis-demographic-age-gender-title-kur.png", sep=""), pointsize=10, width=1600, height=960, res=200)
 plot_age_all <- hist(kobani_dialect_metainfo_male_kur$Age, breaks = 20, col=rgb(0,0,1,0.2), xlim=c(30, 90), ylim=c(0,4),
@@ -62,8 +82,9 @@ plot_sex_school <- ggplot(df, aes(x = "", y = Gender_Eng_Num, fill=EducationLeve
   scale_y_continuous(labels = scales::percent) +
   xlab("Distribution") +
   ylab("Gender") +
-  scale_fill_manual(values=c('pink', 'lightblue', 'khaki', 'lightgreen')) +
-  ggtitle("Distribution of gender and education level of participants")
+  scale_fill_manual(name="Education Level", values=c('pink', 'lightblue', 'khaki', 'lightgreen')) +
+  ggtitle("Distribution of gender and education level of participants") + 
+  theme(legend.position="bottom")
 print(plot_sex_school)
 dev.off()
 
@@ -71,12 +92,13 @@ png(paste0(dir_out, "kobaniAnalysis-demographic-gender-education-notitle.png", s
 plot_sex_school <- ggplot(df, aes(x = "", y = Gender_Eng_Num, fill=EducationLevel)) + 
   geom_col() +
   facet_wrap(~Gender_Eng)+
-  ggtitle(" ") +
+  ggtitle("") +
   coord_polar("y", start=0) +
   scale_y_continuous(labels = scales::percent) +
   xlab("Distribution") +
   ylab("Gender") +
-  scale_fill_manual(values=c('pink', 'lightblue', 'khaki', 'lightgreen')) +
+  scale_fill_manual(name="Education Level", values=c('pink', 'lightblue', 'khaki', 'lightgreen')) + 
+  theme(legend.position="bottom")
 print(plot_sex_school)
 dev.off()
 
