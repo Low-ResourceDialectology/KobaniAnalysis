@@ -65,6 +65,7 @@
 This is a computer-aided analysis of the Kurdish dialect Kobani, based on speech data collected from dozens of native speakers from various villages of that region.
 
 [![Project Motivation Screen Shot][project-idea]](https://github.com/Low-ResourceDialectology/KobaniAnalysis)
+Placement of the Kobani dialect in the Kurdish language family tree. (Original tree based on (Khalid, 2020)).
 
 The Kobani dialect has been neglected by research in the past and is in dire need of being properly analyzed.
 
