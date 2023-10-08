@@ -43,6 +43,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+      	<li><a href="#poster-presented-at-the-ickl-6-in-2023">ICKL-6 Poster</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -64,14 +65,20 @@
 This is a computer-aided analysis of the Kurdish dialect Kobani, based on speech data collected from dozens of native speakers from various villages of that region.
 
 [![Project Motivation Screen Shot][project-idea]](https://github.com/Low-ResourceDialectology/KobaniAnalysis)
+Placement of the Kobani dialect in the Kurdish language family tree. (Original tree based on (Khalid, 2020)).
 
 The Kobani dialect has been neglected by research in the past and is in dire need of being properly analyzed.
 
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+### Poster presented at the ICKL-6 in 2023
+
+The International Conference on Kurdish Linguistics ([ICKL](https://www.uni-frankfurt.de/131978051/Call-for-Papers-ICKL-6)) is a biannual conference serving as a forum of scientific exchange for linguists working on any aspect of Kurdish, including the interactions with its neighboring languages. 
+
+[![Project Poster Screen Shot][project-poster-ickl-png]](https://github.com/Low-ResourceDialectology/KobaniAnalysis)
+[The poster as pdf](https://github.com/Low-ResourceDialectology/KobaniAnalysis/blob/main/images/2023_ICKL_KobaniAnalysis_Poster.pdf)
 
 
 ### Built With
@@ -194,4 +201,7 @@ A list of helpful resources we would like to give credit to:
 [linkedin-url]: https://www.linkedin.com/in/christian-schuler-59090a177/
 [project-screenshot]: images/KobaniAnalysis-Concept.png
 [project-idea]: images/KobaniAnalysis-LangFamily.png
+[project-poster-ickl-png]: images/2023_ICKL_KobaniAnalysis_Poster.png
+[project-poster-ickl-pdf]: images/2023_ICKL_KobaniAnalysis_Poster.pdf
+
 

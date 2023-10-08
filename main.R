@@ -14,7 +14,7 @@ dir_raw <- paste0(dir_init, "/data/raw/", sep="")
 # For reading and later use, this path: dir_raw_gadm
 dir_raw_gadm <- paste0(dir_init, "/data/raw/gadm/", sep="")
 dir_raw_osm <- paste0(dir_init, "/data/raw/osm/", sep="")
-dir_raw_manual <- paste0(dir_init, "/data/raw/manual/", sep="")
+dir_raw_manual <- paste0(dir_init, "/data/manual/", sep="")
 ## Processed data as step to lessen the computational load
 dir_processed <- paste0(dir_init, "/data/processed/", sep="")
 ## Output data holds all results and figures
