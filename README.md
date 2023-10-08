@@ -21,7 +21,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/christianschuler8989/KobaniAnalysis">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="600" height="260">
   </a>
 
   <h3 align="center">KobaniAnalysis</h3>
